@@ -1,0 +1,5 @@
+FROM jaguar_base
+
+WORKDIR /app
+
+COPY . /app
