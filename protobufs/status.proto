@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+enum ResultStatus {
+  OK = 0;
+  NOT_EXIST = 1;
+  INCONSISTENT = 2;
+  UNKNOWN = 3;
+  NOT_ALLOWED = 254;
+  FAILURE = 255;
+}
+
+message StatusResponse {
+  ResultStatus result = 1;
+  string message = 2;
+}

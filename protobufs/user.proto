@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "status.proto";
+
+message UserCheckRequest {
+  string username = 1;
+}
+
+service User {
+    rpc Check (UserCheckRequest) returns (StatusResponse);
+}
